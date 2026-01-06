@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POPS Call Center Solution</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- HEADER (Same Structure) -->
+  <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50 w-full transition-transform duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://raw.githubusercontent.com/tahadoesthat/popsleb.github.io/main/images/popsleb-logo.png" alt="POPS LEB Logo" class="h-10">
+      </a>
+      <!-- COMPLETE NAVIGATION MENU -->
+      <nav class="hidden md:flex space-x-6 items-center">
+         <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Home</a>
+         
+         <!-- Main Products -->
+         <a href="product-restaurant.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Restaurant</a>
+         <a href="product-menutree.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">MenuTree</a>
+         <a href="product-hardware.html" class="text-indigo-600 font-medium transition-colors">Hardware</a>
+
+         <!-- Dropdown for Additional Solutions -->
+         <div class="relative group">
+            <button class="text-gray-700 hover:text-indigo-600 font-medium flex items-center transition-colors py-2">
+              More Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            
+            <!-- Dropdown Content -->
+            <div class="absolute left-0 mt-0 w-56 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-gray-100 z-50">
+               <a href="product-kds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">KDS System</a>
+               <a href="product-qds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">QDS System</a>
+               <a href="product-call-center.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Call Center</a>
+               <a href="product-cloud.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Cloud</a>
+               <a href="product-gym.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Gym</a>
+               <a href="product-apps.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Mobile Apps</a>
+            </div>
+         </div>
+      </nav>
+      <button class="bg-white border-2 border-indigo-600 text-indigo-600 px-6 py-2 rounded-lg font-medium hover:bg-indigo-50 transition-colors">Contact Us</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative bg-gray-900 text-white py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 relative z-10">
+      <div class="md:w-1/2 animate-on-scroll animate-slide-in-right">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Centralized <span class="text-indigo-400">Call Center</span> Solution
+        </h1>
+        <p class="text-lg text-gray-300 mb-8">
+          Unify your order taking. One number, unlimited branches. Route orders automatically based on customer location and reduce operational costs.
+        </p>
+        <div class="flex gap-4">
+          <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-indigo-500 transition-colors shadow-lg">Optimize Delivery</button>
+        </div>
+      </div>
+      <div class="md:w-1/2 animate-on-scroll animate-rise-up" style="transition-delay: 200ms;">
+        <img src="https://placehold.co/600x400/333/white?text=Call+Center+Dashboard" alt="Call Center Dashboard" class="rounded-xl shadow-2xl border-4 border-gray-700">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-headset"></i></div>
+          <h3 class="text-xl font-bold mb-2">Unlimited Agents</h3>
+          <p class="text-gray-600">Scale your operations without limits. Add as many call agents as you need to handle peak times.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up" style="transition-delay: 100ms;">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-map-marked-alt"></i></div>
+          <h3 class="text-xl font-bold mb-2">Smart Routing</h3>
+          <p class="text-gray-600">Orders are automatically distributed to the nearest branch based on the customer's address.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up" style="transition-delay: 200ms;">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-sms"></i></div>
+          <h3 class="text-xl font-bold mb-2">SMS Notifications</h3>
+          <p class="text-gray-600">Keep customers updated. Send automated SMS alerts about order status (Received, Dispatched, Delivered).</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-history"></i></div>
+          <h3 class="text-xl font-bold mb-2">Customer History</h3>
+          <p class="text-gray-600">Caller ID integration instantly shows customer details and previous order history for faster service.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up" style="transition-delay: 100ms;">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-edit"></i></div>
+          <h3 class="text-xl font-bold mb-2">Order Editing</h3>
+          <p class="text-gray-600">Flexible system allows agents to edit orders easily before dispatching to the kitchen.</p>
+        </div>
+        <div class="p-6 border border-gray-200 rounded-xl hover:shadow-lg transition-all animate-on-scroll animate-rise-up" style="transition-delay: 200ms;">
+          <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-network-wired"></i></div>
+          <h3 class="text-xl font-bold mb-2">No VPN Needed</h3>
+          <p class="text-gray-600">Works over the internet securely. No need for expensive private network infrastructure between branches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">© 2025 POPS LEB. Part of POSBANK Middle East.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

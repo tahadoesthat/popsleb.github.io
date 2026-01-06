@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POPS Mobile Apps</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50 w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://raw.githubusercontent.com/tahadoesthat/popsleb.github.io/main/images/popsleb-logo.png" alt="Logo" class="h-10">
+      </a>
+      <!-- COMPLETE NAVIGATION MENU -->
+      <nav class="hidden md:flex space-x-6 items-center">
+         <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Home</a>
+         
+         <!-- Main Products -->
+         <a href="product-restaurant.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Restaurant</a>
+         <a href="product-menutree.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">MenuTree</a>
+         <a href="product-hardware.html" class="text-indigo-600 font-medium transition-colors">Hardware</a>
+
+         <!-- Dropdown for Additional Solutions -->
+         <div class="relative group">
+            <button class="text-gray-700 hover:text-indigo-600 font-medium flex items-center transition-colors py-2">
+              More Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            
+            <!-- Dropdown Content -->
+            <div class="absolute left-0 mt-0 w-56 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-gray-100 z-50">
+               <a href="product-kds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">KDS System</a>
+               <a href="product-qds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">QDS System</a>
+               <a href="product-call-center.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Call Center</a>
+               <a href="product-cloud.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Cloud</a>
+               <a href="product-gym.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Gym</a>
+               <a href="product-apps.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Mobile Apps</a>
+            </div>
+         </div>
+      </nav>
+      <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium">Download</button>
+    </div>
+  </header>
+
+  <!-- APP 1: MANAGEMENT -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center gap-16">
+        <div class="md:w-1/2 animate-on-scroll animate-slide-in-right">
+          <h2 class="text-3xl font-bold text-indigo-900 mb-4">POPS Management App</h2>
+          <p class="text-xl text-indigo-600 font-medium mb-6">Monitor your business from the palm of your hand.</p>
+          <p class="text-gray-600 mb-6">
+            A smart app linked to POPS Restaurant and Retail systems. Track sales, inventory, and staff performance in real-time. Peace of mind, wherever you are.
+          </p>
+          <ul class="space-y-3 mb-8">
+             <li class="flex items-center"><i class="fas fa-chart-bar text-indigo-500 mr-3"></i> Live Sales Dashboard</li>
+             <li class="flex items-center"><i class="fas fa-bell text-indigo-500 mr-3"></i> Instant Alerts (Voids, Refunds)</li>
+             <li class="flex items-center"><i class="fas fa-boxes text-indigo-500 mr-3"></i> Inventory & Purchase Reports</li>
+          </ul>
+          <div class="flex gap-4">
+            <button class="bg-gray-900 text-white px-6 py-2 rounded-lg flex items-center"><i class="fab fa-apple mr-2"></i> App Store</button>
+            <button class="bg-gray-900 text-white px-6 py-2 rounded-lg flex items-center"><i class="fab fa-google-play mr-2"></i> Google Play</button>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate-on-scroll animate-rise-up">
+           <img src="https://placehold.co/300x600/indigo/white?text=Management+App+UI" alt="Management App" class="rounded-3xl shadow-2xl border-8 border-gray-900">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP 2: RESTAURANT PLUS -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+        <div class="md:w-1/2 animate-on-scroll animate-slide-in-right">
+          <h2 class="text-3xl font-bold text-red-900 mb-4">POPS Restaurant+ App</h2>
+          <p class="text-xl text-red-600 font-medium mb-6">Mobile Waiter & Portable POS.</p>
+          <p class="text-gray-600 mb-6">
+            Empower your waiters to take orders tableside. Works on tablets and handheld terminals. Supports Dine-in, Catering, Drive-thru, and Delivery.
+          </p>
+          <ul class="space-y-3 mb-8">
+             <li class="flex items-center"><i class="fas fa-wifi text-red-500 mr-3"></i> Offline Mode Support</li>
+             <li class="flex items-center"><i class="fas fa-utensils text-red-500 mr-3"></i> Send Orders to Kitchen</li>
+             <li class="flex items-center"><i class="fas fa-print text-red-500 mr-3"></i> Bluetooth Printing</li>
+          </ul>
+          <div class="flex gap-4">
+            <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-bold">Get License</button>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate-on-scroll animate-rise-up">
+           <img src="https://placehold.co/300x600/red/white?text=Waiter+App+UI" alt="Restaurant Plus App" class="rounded-3xl shadow-2xl border-8 border-gray-800">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">© 2025 POPS LEB. Part of POSBANK Middle East.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

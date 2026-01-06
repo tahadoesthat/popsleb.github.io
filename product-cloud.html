@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POPS Cloud Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- HEADER (Simplified for brevity, assume similar structure to others) -->
+  <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50 w-full">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <img src="https://raw.githubusercontent.com/tahadoesthat/popsleb.github.io/main/images/popsleb-logo.png" alt="Logo" class="h-10">
+      </a>
+      <!-- COMPLETE NAVIGATION MENU -->
+      <nav class="hidden md:flex space-x-6 items-center">
+         <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Home</a>
+         
+         <!-- Main Products -->
+         <a href="product-restaurant.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">Restaurant</a>
+         <a href="product-menutree.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors">MenuTree</a>
+         <a href="product-hardware.html" class="text-indigo-600 font-medium transition-colors">Hardware</a>
+
+         <!-- Dropdown for Additional Solutions -->
+         <div class="relative group">
+            <button class="text-gray-700 hover:text-indigo-600 font-medium flex items-center transition-colors py-2">
+              More Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            
+            <!-- Dropdown Content -->
+            <div class="absolute left-0 mt-0 w-56 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-gray-100 z-50">
+               <a href="product-kds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">KDS System</a>
+               <a href="product-qds.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">QDS System</a>
+               <a href="product-call-center.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Call Center</a>
+               <a href="product-cloud.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Cloud</a>
+               <a href="product-gym.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">POPS Gym</a>
+               <a href="product-apps.html" class="block px-4 py-2 hover:bg-indigo-50 text-gray-700 transition-colors">Mobile Apps</a>
+            </div>
+         </div>
+      </nav>
+      <button class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium">Login</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Manage Your Business Anywhere</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto mb-10">
+        A powerful cloud portal to organize restaurant operations, inventory, and reporting from any device, anywhere in the world.
+      </p>
+      <img src="https://placehold.co/800x400/white/indigo?text=POPS+Cloud+Dashboard" alt="Cloud Interface" class="mx-auto rounded-xl shadow-2xl animate-on-scroll animate-rise-up">
+    </div>
+  </section>
+
+  <!-- FEATURES LIST -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="animate-on-scroll animate-slide-in-right">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Full Back-Office Control</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Remote Management</strong>
+                <p class="text-gray-600">Add new items, modify prices, and update menus across all branches instantly.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Inventory Control</strong>
+                <p class="text-gray-600">Create purchase orders, receive goods, and transfer stock between branches seamlessly.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Coupon Management</strong>
+                <p class="text-gray-600">Create and track coupons, vouchers, and loyalty points for your customers.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="animate-on-scroll animate-rise-up">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Advanced Reporting</h2>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-chart-pie text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Real-Time Sales</strong>
+                <p class="text-gray-600">View live sales data from all your branches on one screen.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-chart-pie text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Tax Reporting</strong>
+                <p class="text-gray-600">Generate detailed VAT and tax reports compliant with local regulations.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-chart-pie text-blue-500 mt-1 mr-3"></i>
+              <div>
+                <strong class="block text-gray-800">Wastage Analysis</strong>
+                <p class="text-gray-600">Track wastage and cost of goods sold (COGS) to maximize profitability.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-400">© 2025 POPS LEB. Part of POSBANK Middle East.</p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
